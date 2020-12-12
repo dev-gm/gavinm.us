@@ -10,9 +10,9 @@ const {
 const app = express();
 
 const username = 'dev-gm';
-const token = 'b7ccb434e0b11f93baad67e58a97f61de921eb30'
+const token = 'b7ccb434e0b11f93baad67e58a97f61de921eb30';
 
-const port = 80;
+const PORT = process.env.PORT || 3000;
 
 const get_data = () => {
     user_headers = {
@@ -135,7 +135,7 @@ get_data()
             data.last_updated = moment().format('MM/DD/YY hh:mm:ss');
             res.render('index', data);
         });
-        app.listen(port, (err) => {
+        app.listen(PORT, (err) => {
             console.log('Server Started');
         });
     }).catch((err) => {
