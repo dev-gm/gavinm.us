@@ -1,0 +1,413 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{{url}}}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ml-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">History</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">last updated at {{{last_updated}}}</div>
+        <div class="masthead-heading text-uppercase">{{{name}}}</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">About Me</a>
+    </div>
+</header>
+<!-- About-->
+<section class="page-section bg-primary" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">About Me</h2>
+                <hr class="divider light my-4" />
+                <p class="text-white-50 mb-4">{{{about}}}</p>
+                <a class="btn btn-light btn-xl js-scroll-trigger" href="#skills">Specifications</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills-->
+<section class="page-section" id="skills">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Skills</h2>
+            <h3 class="section-subheading text-muted">My programming knowledge and specifications</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-{{{skills.[0].icon}}} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">{{{skills.[0].title}}}</h4>
+                <p class="text-muted">{{{skills.[0].desc}}}</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-{{{skills.[1].icon}}} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">{{{skills.[1].title}}}</h4>
+                <p class="text-muted">{{{skills.[1].desc}}}</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-{{{skills.[2].icon}}} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">{{{skills.[2].title}}}</h4>
+                <p class="text-muted">{{{skills.[2].desc}}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Top Projects-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Projects</h2>
+            <h3 class="section-subheading text-muted">My top projects, listed by most recent commits</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[0].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[0].url}}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[1].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[1].url}}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[2].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[2].url}}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[3].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[3].url}}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[4].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[4].url}}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{{projects.[5].name}}}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{{projects.[5].url}}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- History-->
+<section class="page-section" id="history">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">History</h2>
+            <h3 class="section-subheading text-muted"></h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/history/1.jpg" alt="" /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{{history.[0].date}}}</h4>
+                        <h4 class="subheading">{{{history.[0].title}}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{{history.[0].desc}}}</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/history/2.jpg" alt="" /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{{history.[1].date}}}</h4>
+                        <h4 class="subheading">{{{history.[1].title}}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{{history.[1].desc}}}</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/history/3.jpg" alt="" /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{{history.[2].date}}}</h4>
+                        <h4 class="subheading">{{{history.[2].title}}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{{history.[2].desc}}}</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/history/4.jpg" alt="" /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{{history.[3].date}}}</h4>
+                        <h4 class="subheading">{{{history.[3].title}}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{{history.[3].desc}}}</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        On to the
+                        <br /><br />
+                        future!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+{{> contact}}
+{{> footer}}
+<!-- Portfolio Modals-->
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[0].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[0].url}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                            <p>{{{projects.[0].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[0].committed}}}</li>
+                                <li>Programming Language: {{{projects.[0].lang}}}</li>
+                                <li>Size: {{{projects.[0].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[1].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[1].id}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
+                            <p>{{{projects.[1].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[1].committed}}}</li>
+                                <li>Programming Language: {{{projects.[1].lang}}}</li>
+                                <li>Size: {{{projects.[1].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[2].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[2].id}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
+                            <p>{{{projects.[2].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[2].committed}}}</li>
+                                <li>Programming Language: {{{projects.[2].lang}}}</li>
+                                <li>Size: {{{projects.[2].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 4-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[3].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[3].id}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
+                            <p>{{{projects.[3].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[3].committed}}}</li>
+                                <li>Programming Language: {{{projects.[3].lang}}}</li>
+                                <li>Size: {{{projects.[3].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 5-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[4].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[4].id}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
+                            <p>{{{projects.[4].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[4].committed}}}</li>
+                                <li>Programming Language: {{{projects.[4].lang}}}</li>
+                                <li>Size: {{{projects.[4].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 6-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">{{{projects.[5].name}}}</h2>
+                            <p class="item-intro text-muted">{{{projects.[5].id}}}</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
+                            <p>{{{projects.[5].desc}}}</p>
+                            <ul class="list-inline">
+                                <li>Committed Last: {{{projects.[5].committed}}}</li>
+                                <li>Programming Language: {{{projects.[5].lang}}}</li>
+                                <li>Size: {{{projects.[5].size}}}</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
