@@ -12,7 +12,7 @@ const app = express();
 const username = 'dev-gm';
 const token = 'b7ccb434e0b11f93baad67e58a97f61de921eb30'
 
-const port = 8888
+const port = 80;
 
 const get_data = () => {
     user_headers = {
@@ -115,7 +115,7 @@ const get_data = () => {
                 });
         }).catch((err) => {
             console.log(err);
-        })
+        });
     return data;
 };
 
