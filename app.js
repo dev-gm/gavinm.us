@@ -59,8 +59,8 @@ const get_data = () => {
                                 link: user.html_url,
                                 name: user.login
                             },
-                            email: user.user,
-                            phone: '+13016643907'
+                            email: user.email,
+                            phone: '+17814308522'
                         },
                         skills: [{
                                 icon: 'icon1',
