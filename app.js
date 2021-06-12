@@ -1,11 +1,9 @@
 const express = require('express');
+const { json } = require('express');
 const exphbs = require('express-handlebars');
 const axios = require('axios');
 const moment = require('moment')
 const path = require('path');
-const {
-    json
-} = require('express');
 
 const app = express();
 
@@ -132,7 +130,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 get_data()
     .then((data) => {
         app.get('/', (req, res) => {
-            data.last_updated = moment().format('MM/DD/YY hh:mm:ss');
+            data.last_updated = moment.utc().subtract(5, "hours").format('MM/DD/YY hh:mm:ss');
             res.render('index', data);
         });
         app.listen(PORT, (err) => {
